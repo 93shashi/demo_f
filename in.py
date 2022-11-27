@@ -532,3 +532,5 @@ for i in range(1,N+1):
     if(isprime(i)):
         print(i, end=" ")
 
+#need to practice more code for product based company
+
