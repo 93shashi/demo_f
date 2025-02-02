@@ -1,4 +1,6 @@
-'''import re
+#1. IP validation 
+
+import re
 reg = "^(25[0-5] | 2 [0-4][0-9] | 1[0-9]|[0-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9])$"
 
 def checkip(Ip):
@@ -10,65 +12,29 @@ def checkip(Ip):
 Ip = "192.168.0.1"
 checkip(Ip)
 
-
-#file:
-grade = input("grade of a student")
-with open("student.txt", "r") as file1:
-    data = file1.read()
-    if grade in data:
-        print("student name:", )
-   
-        
-import csv
- 
- 
-seeking_grade = input("Enter the grade to search\n")
-# is a str
- 
-with open("file.txt") as fd:
-    reader = csv.reader(fd)
-    for index, (student, grade, location) in enumerate(reader, start=1):
-        if grade == seeking_grade:
-            print("Student", index)
-            print("Student name:", student)
-            print("Grade:", grade)
-            print("Location:", location)
-
-
-'''
-        
-
-
-
+#2. Python script reverses only the alphabetic characters in the string while keeping the special characters in their original positions
 str1= "a!bcd#$e%^f"
 strlist = list(str1)
-
 i = 0
 j = len(strlist)-1
-
-while i<j:
+while i < j:
     if not strlist[i].isalpha():
-        i+= 1
+        i += 1
     elif not strlist[j].isalpha():
-        j-= 1
+        j -= 1
     else:
         strlist[i], strlist[j] = strlist[j], strlist[i]
-        i+=1
-        j-=1
+        i += 1
+        j -= 1
 str2 = ''.join(strlist)
 print("original list is:{0} ,reverse string is:{1}" .format(str1,str2))
 
-#simple string reverse:
-
-
-
+#3. simple string reverse: using function
 def reverse(str3):
     string4 = ""
     for i in str3:
         string4 = i+string4
-    return string4
-     
-            
+    return string4            
 str3 = "asdfgh"
 print("original string is {0}, reverse string is {1}" .format(str3,reverse(str3)))
 #print(reverse(str3))
