@@ -452,7 +452,8 @@ list1 = [1,3,5,6,7,8,0]
 list2= []
 for i in list1:
     list2.insert(0,i)
-print(list2)
+print("Reverse of list1 is:",list2)
+
 #first 20 prime number
 def isPrime(n):
     if(n==1 or n==0):
