@@ -283,7 +283,7 @@ print(res)
 def sumlist(list3):
     len1 = len(list3)
     cu = []
-    cu = [sum(list3[0:x:1]) for x in range(0,len1+1)]
+    cu = [sum(list3[0:x]) for x in range(0,len1+1)]
     return cu[1:]
 list3 = [12,34,56,67,78]
 print(sumlist(list3))
