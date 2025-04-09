@@ -467,7 +467,7 @@ for i in range(1, N+1):
     if(isPrime(i)):
         print(i,end= " ")
 
-=============
+#=============
 def isPrime(n):
   
     # Corner case
