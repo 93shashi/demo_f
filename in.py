@@ -282,7 +282,7 @@ print(res)
 #========
 import logging
 
-log1 = logging.basicConfig('new.txt',level=logging.ERROR)
+log1 = logging.basicConfig(filename='filenew.txt',level=logging.ERROR)
 
 try:
     print()
