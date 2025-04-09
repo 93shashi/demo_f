@@ -308,7 +308,7 @@ t3 = Thread(target=wish,args=("dhoni2",))
 t1.start()
 t2.start()
 t3.start()
-t1.join(t2)
+t1.join()
 
 #==============
 import logging
