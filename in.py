@@ -323,7 +323,7 @@ else:
     print("division value is:", c)
 
 #==========
-str1 = input("Enter a string")
+'''str1 = input("Enter a string")
 sub1 = input("enter a sub-string")
 Flag = False
 pos = -1
@@ -337,7 +337,7 @@ while True:
 if Flag == False:
     print("position not found")
     
-
+'''
 import json
 import os
 #path=os.path("C:\Users\shashi8x\OneDrive - Intel Corporation\Desktop\EII_project\uwcval")
