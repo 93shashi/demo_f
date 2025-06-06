@@ -39,6 +39,8 @@ str3 = "asdfgh"
 print("original string is {0}, reverse string is {1}" .format(str3,reverse(str3)))
 #print(reverse(str3))
 
+
+''' List addition '''
 L1=[2,5,8,5]
 L2 = [4,6,7,89]
 
@@ -128,7 +130,7 @@ wish("shashi")
 class animal():
     legs = 4
     @classmethod
-    def display(cls, name):
+    def display(cls, name):bv
         #cls.name=name
         print("{} walks with {} legs :" .format(name,cls.legs))
 
