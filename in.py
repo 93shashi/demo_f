@@ -494,3 +494,38 @@ for i in range(1,N+1):
 
 #need to practice more code for product based company
 
+#Exception handling custom and general expection:
+
+import logging
+
+logging.basicConfig(filename="logpractice2.txt",level=logging.ERROR)
+class lowsalary(Exception):
+    def __init__(self,salary,msg = "salary is low"):
+        self.salary = salary
+        self.msg = msg
+
+class emp:
+    def __init__(self,name):
+        self.name = name
+    def data(self):
+        try:
+            salary = int(input("enter your salary \t"))
+            expenses = int(input("enter you rtotal expecses \t"))
+            
+        
+            if salary <= 10000:
+                raise lowsalary(salary)
+                print("your salary is less than market")
+            else:
+                print(f"expenses ratio is {salary/expenses}")
+        except lowsalary as el:
+            print("costom error", el)
+            logging.error(f"low salary for {self.name}: {el}")
+        except Exception as e:
+            print("error in value", e )
+            logging.error("this is written in file")
+
+name = "shashi"
+obj = emp(name)
+obj.data()
+
